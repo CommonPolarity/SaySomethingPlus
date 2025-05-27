@@ -9,19 +9,20 @@ public class SaySomethingPlus {
         Scanner kbd = new Scanner(System.in);
         System.out.println(Formatting.ITALIC + "Say" + Formatting.RESET + Formatting.BOLD_ITALIC + "Something" + Formatting.YELLOW + "+" + Formatting.RESET); 
         System.out.println("(0) 2025 CommonPolarity. No rights reserved.");
+        System.out.println("Need help doing something? Go & type !help.");
         System.out.println("This program is licensed under the MIT License.");
 
-        while (true) {
+        while(true) {
             System.out.print("What do you want me to say?: ");
             String say = kbd.nextLine();
 
-            if (say.equals("!exit")) {
+            if(say.equals("!exit")) {
                 Exit exec = new Exit();
                 boolean shouldExit = exec.leave(kbd);
                 if (shouldExit) {
                     break;
                 }
-            } else if (say.equals("!btform")) {
+            } else if(say.equals("!btform")) {
                 BTFormQuestion ask = new BTFormQuestion();
                 boolean execMode = ask.formExec(kbd);
                 System.out.println("BTForm mode enabled. To exit the program, you must type !exitprog.");
@@ -30,6 +31,9 @@ public class SaySomethingPlus {
                     BTFormImplementation addMore = new BTFormImplementation();
                     execMode = addMore.startImplementation(kbd);
                 }
+            } else if(say.equals("!help")) {
+                Help display = new Help();
+                display.help(say);
             } else {
                 BoxConstruction msgBox = new BoxConstruction();
                 msgBox.construct(say);

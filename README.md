@@ -12,7 +12,7 @@ A new interpretation of my old project [SaySomething](https://github.com/CommonP
 
 ## Differences
 - **BTForm mode**: Short for **B**asic **T**ext **Form**atting, BTForm is a simple markup language made by me in order to be used with this program.<br /> It allows for formatting color and text formatting using ANSI. In order to go into BTForm mode, all you need to do is type `!btform` and you'll be prompted et voilà!
-- **Expanded use of classes**: Because of the use of classes in order to branch out the program, that means that the main class is 7 lines shorter than SaySomething.java!
+- **Expanded use of classes**: Because of the use of classes in order to branch out the program, that means that the main class is 4 lines shorter than SaySomething.java! (WAOW!)
 
 ## Prerequisites
 - Git/GitHub Desktop
