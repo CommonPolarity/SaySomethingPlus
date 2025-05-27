@@ -38,6 +38,7 @@ The program should now pop up!
 
 ## Information
 - Although you can exit using `Ctrl+C`, it's miles easier to just use the built in command in the program, `!exit`!
+- Need documentation on BTForm? Click [here](https://github.com/CommonPolarity/BTForm)!
 - To use it, just type `!exit` whenever it asks for you to type something.
   - It will throw something that says:
     ```Are you sure you want to exit? (y/n)```
